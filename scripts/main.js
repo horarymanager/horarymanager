@@ -943,7 +943,7 @@ window.onload = () => {
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('/service-worker.js')
+      .register('/services-worker.js')
       .then(reg => console.log('Service Worker Registrado', reg))
       .catch(err => console.log('Service Worker Error: ', err));
   });
