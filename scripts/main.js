@@ -938,13 +938,3 @@ window.onload = () => {
     console.log("Este navegador no soporta notificaciones.");
   }
 }
-
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker
-      .register('./../services-worker.js')
-      .then(reg => console.log('Service Worker Registrado', reg))
-      .catch(err => console.log('Service Worker Error: ', err));
-  });
-}
