@@ -923,18 +923,4 @@ window.onload = () => {
       router.start();
     }
   }
-
-  if ("Notification" in window) {
-    // Pedir permiso al usuario
-    Notification.requestPermission().then(permission => {
-      if (permission === "granted") {
-        // Crear una notificación de prueba
-        new Notification("¡Gracias por permitir las notificaciones!");
-      } else if (permission === "denied") {
-        console.log("El usuario ha denegado el permiso para las notificaciones.");
-      }
-    });
-  } else {
-    console.log("Este navegador no soporta notificaciones.");
-  }
 }
