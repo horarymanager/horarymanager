@@ -373,7 +373,7 @@ router.get(['/', '', ' '], () => {
   });
 
   let notificaciones = converterArray(simpleUser.notifications);
-  let ultimas3 = [notificaciones[notificaciones.length-1], notificaciones[notificaciones.length-2], notificaciones[notificaciones.length-3]];
+  let ultimas3 = [...notificaciones];
 
   let aguaTomadaHoy = localStorage.getItem('register-waters')?JSON.parse(localStorage.getItem('register-waters')):{};
 
@@ -531,7 +531,6 @@ function viewTarea(id){
   });
 
   let findingService = allData[finalUsering.id].services[id];
-  console.log(findingService)
 
   alert.fire({
     imageUrl: localStorage.getItem(findingService.finalFile),
