@@ -1,15 +1,15 @@
 const CACHE_NAME = 'v1';
 const CACHE_ASSETS = [
-  '/',
-  '/index.html',
-  '/scripts/alerts.js',
-  '/scripts/bootstrap.js',
-  '/scripts/crypto.js',
-  '/scripts/database.js',
-  '/scripts/main.js',
-  '/scripts/timems.js',
-  '/styles/bootstrap.css',
-  '/styles/style.css',
+  './',
+  './index.html',
+  './scripts/alerts.js',
+  './scripts/bootstrap.js',
+  './scripts/crypto.js',
+  './scripts/database.js',
+  './scripts/main.js',
+  './scripts/timems.js',
+  './styles/bootstrap.css',
+  './styles/style.css',
 ];
 
 // Instalar el Service Worker
