@@ -21,11 +21,18 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// Intercepta las solicitudes de la red y responde con el caché si está disponible
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
+      if (response) {
+        // Si el archivo está en caché, lo devuelve
+        return response;
+      }
+      // Si no está en caché, lo solicita a la red
+      return fetch(event.request).catch(() => {
+        // En caso de que no haya conexión, puedes devolver una página alternativa
+        return caches.match('/horarymanager/index.html'); // Opcional, en caso de fallar la red
+      });
     })
   );
 });
