@@ -1,7 +1,7 @@
 {
   "name": "HoraryManager - APP",
   "short_name": "HoraryManager",
-  "start_url": "/index.html",
+  "start_url": "/horarymanager/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
