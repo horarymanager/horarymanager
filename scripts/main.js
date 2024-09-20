@@ -923,3 +923,14 @@ window.onload = () => {
     }
   }
 }
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/horarymanager/scripts/registrator.js').then((registration) => {
+      console.log('ServiceWorker registrado con éxito:', registration);
+    }).catch((error) => {
+      console.log('Error en el registro del ServiceWorker:', error);
+    });
+  });
+}
