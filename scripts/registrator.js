@@ -2,13 +2,13 @@ const CACHE_NAME = 'horarymanager-cache-v1';
 const urlsToCache = [
   '/horarymanager/index.html',
   '/horarymanager/',
-  '/horaymanager/scripts/alerts.js',
-  '/horaymanager/scripts/bootstrap.js',
-  '/horaymanager/scripts/crypto.js',
-  '/horaymanager/scripts/database.js',
-  '/horaymanager/scripts/main.js',
-  '/horaymanager/scripts/timems.js',
-  '/horaymanager/logo.png'
+  '/horarymanager/scripts/alerts.js',
+  '/horarymanager/scripts/bootstrap.js',
+  '/horarymanager/scripts/crypto.js',
+  '/horarymanager/scripts/database.js',
+  '/horarymanager/scripts/main.js',
+  '/horarymanager/scripts/timems.js',
+  '/horarymanager/logo.png'
 ];
 
 // Durante la fase de instalación del Service Worker, cachea los archivos importantes
